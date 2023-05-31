@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivByRoom"
+        app:srcCompat="@drawable/view2"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <TextView
+        android:id="@+id/tvRoomNmae"
+        android:text="Deluex Twin"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_below="@id/ivByRoom"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:fontFamily="@font/encodesanssemicondensed_bold"
+        android:textSize="@dimen/text_regular_3x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvRoomDes"
+        android:text="Twin Single Beds,Cable TV ,Wifi free"
+        android:textColor="@color/colorSecondaryText"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:layout_below="@id/tvRoomNmae"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:fontFamily="@font/encodesanssemicondensed_regular"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"/>
+    
+    <TextView
+        android:id="@+id/tvViewRates"
+        android:text="View Rates"
+        android:fontFamily="@font/encodesanssemicondensed_bold"
+        android:textSize="@dimen/text_regular_2x"
+        android:background="@drawable/bg_view_rate"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+       android:layout_alignBottom="@id/tvRoomDes"
+        android:textAlignment="center"
+        android:paddingStart="@dimen/margin_medium"
+        android:paddingEnd="@dimen/margin_medium"
+        android:paddingTop="@dimen/margin_medium_2"
+        android:paddingBottom="@dimen/margin_medium_2"
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvAvg"
+        android:text="Avg.Nightly/Room Form"
+        android:textColor="@color/colorSecondaryText"
+        android:textStyle="bold"
+        android:layout_below="@id/tvRoomDes"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:fontFamily="@font/encodeanssemicondensed_semibold"
+        android:textSize="@dimen/text_regular_2x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/tvSCD"
+        android:layout_toStartOf="@id/tvRoomCost"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:layout_alignBottom="@id/tvAvg"
+        android:textColor="@color/colorgrey"
+        android:text="SCD"
+        android:layout_marginBottom="4dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/encodeanssemicondensed_semibold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvRoomCost"
+        android:text="161.42"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@id/tvAvg"
+        android:fontFamily="@font/encodesanssemicondensed_bold"
+        android:textSize="@dimen/text_heading_1x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_below="@id/tvAvg"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:background="@color/colorSecondaryText"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+</RelativeLayout>

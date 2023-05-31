@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_vh_by_rates"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:id="@+id/rlRoot"
+    android:paddingTop="@dimen/margin_medium_2"
+    android:paddingStart="@dimen/margin_medium_2"
+    android:paddingEnd="@dimen/margin_medium_2"
+    android:layout_marginBottom="@dimen/margin_card_medium"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvEVoucher"
+        android:fontFamily="@font/encodeanssemicondensed_semibold"
+        android:text="YOUR E-VOUCHER RATE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivNext"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/nextred"
+        android:scaleType="centerCrop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvMobileappVoucher"
+        android:layout_below="@id/tvEVoucher"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_regular_3x"
+        android:fontFamily="@font/encodesanssemicondensed_bold"
+        android:text="Mobile APP Special Voucher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/llFood"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_below="@id/tvMobileappVoucher"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivFood"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/fnb"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"/>
+        <TextView
+            android:id="@+id/tvFnb"
+            android:textStyle="bold"
+            android:text="Inclusive of Breakfast"
+            android:fontFamily="@font/encodesanssemicondensed_regular"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:textColor="@color/colorSecondaryText"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lldiscount"
+        android:gravity="center"
+        android:layout_toEndOf="@id/llFood"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_below="@id/tvMobileappVoucher"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivDiscount"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/discount"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"/>
+        <TextView
+            android:id="@+id/tvDiscount"
+            android:textStyle="bold"
+            android:text="20% off In Room Service"
+            android:fontFamily="@font/encodesanssemicondensed_regular"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:textColor="@color/colorSecondaryText"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvViewRates"
+        android:text="View Rates"
+        android:fontFamily="@font/encodesanssemicondensed_bold"
+        android:textSize="@dimen/text_regular_2x"
+        android:background="@drawable/bg_view_rate"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignTop="@id/lldiscount"
+        android:textAlignment="center"
+        android:paddingStart="@dimen/margin_medium_2"
+        android:paddingEnd="@dimen/margin_medium_2"
+        android:paddingTop="@dimen/margin_medium_3"
+        android:paddingBottom="@dimen/margin_medium_3"
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/viewSeparator"
+        android:layout_below="@id/llFood"
+        android:layout_marginTop="@dimen/margin_card_medium_2"
+        android:background="@color/colorSecondaryText"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <TextView
+        android:id="@+id/tvAvg"
+        android:text="Avg.Nightly/Room Form"
+        android:textColor="@color/colorgrey"
+        android:textStyle="bold"
+        android:layout_below="@id/viewSeparator"
+        android:layout_marginTop="@dimen/margin_card_medium_2"
+        android:fontFamily="@font/encodeanssemicondensed_semibold"
+        android:textSize="@dimen/text_regular_2x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvAvgDetail"
+        android:text="Subject to GST And Service Charge"
+        android:textColor="@color/colorSecondaryText"
+        android:textStyle="bold"
+        android:layout_below="@id/tvAvg"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/encodeanssemicondensed_semibold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvSCD"
+        android:layout_toStartOf="@id/tvRoomCost"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:layout_alignBottom="@id/tvAvgDetail"
+        android:text="SCD"
+        android:layout_marginBottom="4dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/encodesanssemicondensed_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvRoomCost"
+        android:text="161.42"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@id/tvAvgDetail"
+        android:fontFamily="@font/encodesanssemicondensed_bold"
+        android:textSize="@dimen/text_heading_1x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/llMember"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_below="@id/rlRoot"
+        android:layout_margin="4dp"
+        android:background="@color/color_member_deal"
+        android:gravity="center_vertical|center">
+
+        <TextView
+            android:id="@+id/tvMember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/encodeanssemicondensed_semibold"
+            android:text="MEMBERS DEALS"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_regular_2x" />
+    </RelativeLayout>
+</LinearLayout>
